@@ -1,0 +1,141 @@
+:root {
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-cream: hsl(30, 38%, 92%);
+
+  --color-Very-dark-blue: hsl(212, 21%, 14%);
+  --color-Dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-White: hsl(0, 0%, 100%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-cream);
+}
+.container {
+    height: calc(100vh - 14px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    background-color: var(--color-White);
+    width: 666.6px;
+    height: 500px;
+    border-radius: 10px;
+}
+.info {
+    padding: 35px;
+}
+.img {
+    border-radius: inherit;
+}
+.img img {
+    /* fit content */
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info p {
+    color: var(--color-Dark-grayish-blue);
+    
+}
+.info .main-paragraph {
+    letter-spacing: 4px;
+}
+.info .main-title {
+    font-family: "Fraunces", serif;
+    line-height: 35px;
+    max-width: 10ch;
+    color: var(--color-Very-dark-blue);
+    margin-top: 20px;
+}
+
+.info .price .main-price {
+    font-family: "Fraunces", serif;
+    color: var(--color-dark-cyan);
+}
+
+.description {
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+.info .price {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.info .price p {
+    margin-left: 25px;
+    text-decoration: line-through;
+}
+
+.addtocart {
+    background-color: var(--color-dark-cyan);
+    color: var(--color-White);
+    border-color: transparent;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+.addtocart:hover {
+    background-color: hsl(158, 36%, 30%);
+}
+
+@media only screen and (max-width: 650px) {
+    .img img {
+        width: 100%;
+        height: 250px;
+        object-fit:cover;
+        border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            border-bottom-left-radius: initial;
+
+    }
+    .container {
+        height: calc(865px - 14px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-White);
+        width: 320px;
+        height: 710px;
+        border-radius: 10px;
+    }
+    .info {
+        height: 200px;
+    }
+    .info .main-title {
+        margin-top: 10px;
+    }
+    .description {
+        margin-top: 15px;
+    }
+    .info .price {
+        margin-top: 15px;
+    }
+    .addtocart {
+        margin-top: 20px;
+    }
+}
