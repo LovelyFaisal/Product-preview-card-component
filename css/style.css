@@ -30,13 +30,17 @@ body {
 }
 .info {
     padding: 35px;
+    flex: 50%
 }
 .img {
     border-radius: inherit;
+    flex: 50%;
 }
 .img img {
     /* fit content */
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
