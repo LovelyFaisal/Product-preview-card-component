@@ -15,8 +15,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-cream);
 }
-.container {
-    height: calc(100vh - 14px);
+main {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,16 +25,19 @@ body {
     display: flex;
     background-color: var(--color-White);
     width: 666.6px;
-    height: 500px;
-    border-radius: 10px;
+    margin: 32px;
+    border-radius: 15px;
 }
 .info {
+    display: flex;
+    flex-direction: column;
     padding: 35px;
     flex: 50%
 }
 .img {
     border-radius: inherit;
     flex: 50%;
+    
 }
 .img img {
     /* fit content */
@@ -44,10 +47,7 @@ body {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
-.info {
-    display: flex;
-    flex-direction: column;
-}
+
 .info p {
     color: var(--color-Dark-grayish-blue);
     
@@ -58,9 +58,9 @@ body {
 .info .main-title {
     font-family: "Fraunces", serif;
     line-height: 35px;
-    max-width: 10ch;
     color: var(--color-Very-dark-blue);
     margin-top: 20px;
+    font-size: 35px;
 }
 
 .info .price .main-price {
@@ -103,28 +103,27 @@ body {
     background-color: hsl(158, 36%, 30%);
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
 @media only screen and (max-width: 650px) {
     .img img {
         width: 100%;
-        height: 250px;
+        content: url('../images/image-product-mobile.jpg');
+        
         object-fit:cover;
         border-top-left-radius: inherit;
             border-top-right-radius: inherit;
             border-bottom-left-radius: initial;
 
     }
-    .container {
-        height: calc(865px - 14px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .card {
         display: flex;
         flex-direction: column;
         background-color: var(--color-White);
-        width: 320px;
-        height: 710px;
+        width: 100%;
         border-radius: 10px;
     }
     .info {
