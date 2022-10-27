@@ -80,9 +80,9 @@ body > main {
 
 }
 
-.info .price p {
+.info .price del {
+    color: var(--color-Dark-grayish-blue);
     margin-left: 25px;
-    text-decoration: line-through;
 }
 
 .addtocart {
