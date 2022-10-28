@@ -110,7 +110,12 @@ body > main {
 
 .attribution {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    font-size: 15px;
+}
+
+.attribution a {
+    color: var(--color-dark-cyan);
 }
 
 @media only screen and (max-width: 650px) {
